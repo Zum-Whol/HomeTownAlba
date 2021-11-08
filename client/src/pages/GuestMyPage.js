@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function GuestMyPage() {
   const [GuestStatus, setGuestStatus] = useState("jobseeker");
 
-  const JobSeekrHandler = (e) => {
+  const JobSeekrHandler = e => {
     setGuestStatus("jobseeker");
   };
-  const CompanyHandler = (e) => {
+  const CompanyHandler = e => {
     setGuestStatus("company");
   };
- if (GuestStatus === "jobseeker") {
+  if (GuestStatus === "jobseeker") {
     return (
       <>
         <NavBar />

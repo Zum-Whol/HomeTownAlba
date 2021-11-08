@@ -11,7 +11,6 @@ import AdminPage from "./components/AdminPage";
 
 import GuestMyPage from "./pages/GuestMyPage";
 import MyPage from "./pages/MyPage";
-import Worknet from "./components/Worknet";
 import ChatPage from "./components/ChatPage";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <Route exact path="/guest/mypage" component={GuestMyPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/register" component={RegisterPage} />
-        <Route exact path="/test" component={Worknet} />
         <Route exact path="/chat" component={ChatPage} />
       </Switch>
     </>
